@@ -1,0 +1,74 @@
+/* Contenedor general */
+.carrusel-contenedor {
+    margin: 10px auto;
+    width: 100%;
+    max-width: 1200px;
+    overflow: hidden;
+    position: relative;
+    padding: 40px 0;
+    /* Difumina los bordes izquierdo y derecho para una entrada/salida más limpia */
+    mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
+/* El div carrusel */
+.carrusel {
+    display: flex;
+    width: max-content;
+    gap: 25px;
+    /* Usamos una variable calculada en JS para el desplazamiento fluido */
+    animation: scrollInfinito 30s linear infinite;
+}
+
+/* Pausar la animación general cuando el mouse esté sobre el carrusel */
+.carrusel:hover {
+    animation-play-state: paused;
+}
+
+/* Estilos de cada tarjeta/imagen */
+.carrusel-item {
+    width: 280px;
+    height: 180px;
+    border-radius: 14px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1), 
+                filter 0.4s ease, 
+                opacity 0.4s ease;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    flex-shrink: 0;
+}
+
+.carrusel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* EFECTO HOVER GENERAL: Opaca y distorsiona las demás cuando el mouse entra */
+.carrusel:hover .carrusel-item {
+    opacity: 0.35;
+    filter: blur(3px) grayscale(40%);
+    transform: scale(0.95);
+}
+
+/* EFECTO FOCUS: La foto exacta sobre la que está el mouse se destaca */
+.carrusel .carrusel-item:hover {
+    opacity: 1;
+    filter: blur(0px) grayscale(0%);
+    transform: scale(1.15);
+    z-index: 10;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+}
+
+/* Keyframes para que salgan por un lado y aparezcan por el otro exactamente */
+@keyframes scrollInfinito {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        /* Se desplaza exactamente el ancho del bloque original (inyectado por JS) */
+        transform: translateX(var(--scroll-width));
+    }
+}

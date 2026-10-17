@@ -3,13 +3,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Lista de tus imágenes dentro de la carpeta "imagenes/"
     const imagenes = [
-        "3.jpg.jpeg",
-        "4.jpg.jpeg",
-        "5.jpg.jpeg",
-        "6.jpg.jpeg",
-        "7.jpg.jpeg",
-        "8.jpg.jpeg",
-        "9.jpg.jpeg"
+        "5.jpg",
+        "7.jpg",
+        "9.jpg",
+        "11.jpg",
+        "13.jpg",
+        "14.jpg",
+        "3.jpg"
     ];
 
     function inicializarCarrusel() {
@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
             // --- AGREGA ESTAS LÍNEAS AQUÍ ---
             img.style.width = "320px";      // Ajusta el ancho deseado
             img.style.height = "200px";     // Ajusta el alto (hazlo más pequeño para que sea rectangular)
-            img.style.objectFit = "cover"; // "contain" evita que se recorten (muestra la imagen completa)
+            img.style.objectFit = "contain"; // "contain" evita que se recorten (muestra la imagen completa)
             // ---------------------------------
             
             img.onerror = () => {

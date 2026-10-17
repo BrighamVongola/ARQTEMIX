@@ -1,0 +1,190 @@
+/* ==========================================================
+   PALETA DE COLORES: VERDES, MORADOS Y DORADOS (ARQTEMIX)
+   ================================================---------- */
+:root {
+    /* Tonos Verdes */
+    --verde-profundo: #0A1C14;   /* Fondo ultra oscuro con matiz verde */
+    --verde-principal: #102A1E;  /* Fondo base del body */
+    --verde-esmeralda: #1B4D3E;  /* Verde para secciones y contrastes */
+    --verde-brillante: #257056;  /* Acentos verdes luminosos */
+
+    /* Tonos Morados / Violetas */
+    --morado-oscuro: #2A103C;    /* Fondo oscuro púrpura */
+    --morado-medio: #3E165B;     /* Fondo de secciones e interior de tarjetas */
+    --morado-vibrante: #6A1B9A;  /* Púrpura intenso para hovers y bordes */
+    --morado-neon: #9C27B0;      /* Acento brillante */
+
+    /* Tonos Dorados y Acentos */
+    --dorado-principal: #FFD700; /* Dorado brillante e intenso */
+    --dorado-suave: #F4D03F;     /* Dorado cálido para texto secundario */
+    --dorado-oscuro: #B7950B;    /* Dorado para bordes oscuros o sombras */
+
+    /* Neutros y Sombras */
+    --texto-oscuro: #09030C;     /* Bordes de alto contraste */
+    --sombra-morada: rgba(156, 39, 176, 0.35);
+    --sombra-dorada: rgba(255, 215, 0, 0.3);
+}
+
+/* RESET GENERAL */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    color: var(--dorado-principal);
+    box-sizing: border-box;
+}
+
+
+/* ==========================================================
+   ESTILOS DE LOGIN Y REGISTRO (ARQTEMIX)
+   ================================================---------- */
+
+.login-container {
+    position: relative;
+    width: 90%;
+    max-width: 420px;
+    margin: 30px auto;
+    padding: 30px 25px;
+    background: linear-gradient(145deg, var(--morado-medio) 0%, var(--verde-esmeralda) 100%);
+    border: 2px solid var(--dorado-principal);
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6), 0 0 20px var(--sombra-morada);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Tabs de Iniciar Sesión / Registro */
+.form-tabs {
+    display: flex;
+    width: 100%;
+    margin-bottom: 10px;
+    border-bottom: 2px solid var(--verde-brillante);
+}
+
+.tab-btn {
+    flex: 1;
+    padding: 10px;
+    background: transparent;
+    border: none;
+    color: var(--dorado-suave);
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.tab-btn.active {
+    color: var(--dorado-principal);
+    border-bottom: 3px solid var(--dorado-principal);
+    text-shadow: 0 0 8px var(--sombra-dorada);
+}
+
+.login-container h2 {
+    font-size: 1.8rem;
+    color: var(--dorado-principal);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+    margin-bottom: 10px;
+}
+
+/* Formulario */
+#auth-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 5px;
+}
+
+.input-group.hidden {
+    display: none;
+}
+
+.input-group label {
+    font-size: 0.9rem;
+    color: var(--dorado-suave);
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px 15px;
+    background-color: var(--verde-profundo);
+    border: 1px solid var(--morado-vibrante);
+    border-radius: 8px;
+    color: #FFFFFF;
+    font-size: 0.95rem;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input-group input:focus {
+    border-color: var(--dorado-principal);
+    box-shadow: 0 0 8px var(--sombra-dorada);
+}
+
+/* Botón principal */
+.btn-primary {
+    margin-top: 10px;
+    padding: 12px;
+    background: linear-gradient(90deg, var(--morado-vibrante) 0%, var(--verde-brillante) 100%);
+    border: 2px solid var(--dorado-principal);
+    border-radius: 8px;
+    color: var(--dorado-principal);
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px var(--sombra-dorada);
+}
+
+/* Separador (ó) */
+.divider {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 15px 0 10px 0;
+}
+
+.divider::before, .divider::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: var(--dorado-oscuro);
+}
+
+.divider span {
+    padding: 0 10px;
+    color: var(--dorado-suave);
+    font-size: 0.85rem;
+}
+
+/* Sección Google */
+.google-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.google-section p {
+    font-size: 0.9rem;
+    color: #F8F9FA;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}

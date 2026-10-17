@@ -5,21 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ARQTEMIX - Datos de Reservorios</title>
     
-    <!-- Estilos Leaflet CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
-    
-    <!-- Estilos propios con la paleta Arqtemix -->
     <link rel="stylesheet" href="../CSS/datos.css">
 </head>
 <body>
 
-    <!-- Header unificado con login.html -->
     <header>
         <div class="cabezal">
             <a href="login.html">
-                <img src="../images/LOGO_UNI-removebg-preview.png" alt="Logo de UNI" class="logo">
+                <img src="../images/LOGO_UNI-removebg-preview.png" alt="Logo de UNI" class="logo" id="uni">
             </a>
-            <h1>ARQTEMIX</h1>
+            
+            <img src="../images/LOGO IDEA.png" alt="Logo Aqua Verde" class="logo-aqua">
+        
             <div class="user-nav-container">
                 <span class="user-welcome">AdminSINAPRED</span>
                 <button id="btn-logout" class="btn-logout">Cerrar Sesión</button>
@@ -28,13 +26,11 @@
     </header>
 
     <main>
-        <!-- Mapa Interactivo -->
         <div class="map-container">
             <h2>Mapa Interactivo de Reservorios Pluviales</h2>
             <div id="map"></div>
         </div>
 
-        <!-- Sección de Imagen -->
         <section class="image-section">
             <h2>Ubicación Seleccionada</h2>
             <div class="info-content" id="image-container">
@@ -42,7 +38,6 @@
             </div>
         </section>
 
-        <!-- Sección de Información -->
         <section class="info-section">
             <h2>Información Técnica</h2>
             <div class="info-content" id="info-container">
@@ -51,10 +46,7 @@
         </section>
     </main>
 
-    <!-- JS de Leaflet -->
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-    
-    <!-- Script de datos y eventos -->
     <script src="../JS/datos.js"></script>
 </body>
 </html>

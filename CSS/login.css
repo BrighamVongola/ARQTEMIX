@@ -1,43 +1,25 @@
 /* ==========================================================
-   PALETA DE COLORES: VERDES, MORADOS Y DORADOS (ARQTEMIX)
+   PALETA DE COLORES: AQUA VERDE (Login)
    ================================================---------- */
 :root {
-    /* Tonos Verdes */
-    --verde-profundo: #0A1C14;   /* Fondo ultra oscuro con matiz verde */
-    --verde-principal: #102A1E;  /* Fondo base del body */
-    --verde-esmeralda: #1B4D3E;  /* Verde para secciones y contrastes */
-    --verde-brillante: #257056;  /* Acentos verdes luminosos */
+    --color-fondo-profundo: #06130e;
+    --color-verde-base: #102219;
+    --color-azul-acuoso: #3e92a4;
+    --color-verde-fresco: #639c5e;
+    --color-cian-luminoso: #5bc0be;
+    --color-menta-suave: #86efac;
 
-    /* Tonos Morados / Violetas */
-    --morado-oscuro: #2A103C;    /* Fondo oscuro púrpura */
-    --morado-medio: #3E165B;     /* Fondo de secciones e interior de tarjetas */
-    --morado-vibrante: #6A1B9A;  /* Púrpura intenso para hovers y bordes */
-    --morado-neon: #9C27B0;      /* Acento brillante */
-
-    /* Tonos Dorados y Acentos */
-    --dorado-principal: #FFD700; /* Dorado brillante e intenso */
-    --dorado-suave: #F4D03F;     /* Dorado cálido para texto secundario */
-    --dorado-oscuro: #B7950B;    /* Dorado para bordes oscuros o sombras */
-
-    /* Neutros y Sombras */
-    --texto-oscuro: #09030C;     /* Bordes de alto contraste */
-    --sombra-morada: rgba(156, 39, 176, 0.35);
-    --sombra-dorada: rgba(255, 215, 0, 0.3);
+    --sombra-azul: rgba(62, 146, 164, 0.35);
+    --sombra-verde: rgba(99, 156, 94, 0.3);
 }
 
-/* RESET GENERAL */
 *{
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-    color: var(--dorado-principal);
+    color: var(--color-menta-suave);
     box-sizing: border-box;
 }
-
-
-/* ==========================================================
-   ESTILOS DE LOGIN Y REGISTRO (ARQTEMIX)
-   ================================================---------- */
 
 .login-container {
     position: relative;
@@ -45,22 +27,21 @@
     max-width: 420px;
     margin: 30px auto;
     padding: 30px 25px;
-    background: linear-gradient(145deg, var(--morado-medio) 0%, var(--verde-esmeralda) 100%);
-    border: 2px solid var(--dorado-principal);
+    background: linear-gradient(145deg, var(--color-verde-base) 0%, #0c2419 100%);
+    border: 2px solid var(--color-azul-acuoso);
     border-radius: 16px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6), 0 0 20px var(--sombra-morada);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6), 0 0 20px var(--sombra-azul);
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 15px;
 }
 
-/* Tabs de Iniciar Sesión / Registro */
 .form-tabs {
     display: flex;
     width: 100%;
     margin-bottom: 10px;
-    border-bottom: 2px solid var(--verde-brillante);
+    border-bottom: 2px solid var(--color-verde-fresco);
 }
 
 .tab-btn {
@@ -68,7 +49,7 @@
     padding: 10px;
     background: transparent;
     border: none;
-    color: var(--dorado-suave);
+    color: var(--color-menta-suave);
     font-size: 1rem;
     font-weight: 600;
     cursor: pointer;
@@ -76,19 +57,18 @@
 }
 
 .tab-btn.active {
-    color: var(--dorado-principal);
-    border-bottom: 3px solid var(--dorado-principal);
-    text-shadow: 0 0 8px var(--sombra-dorada);
+    color: var(--color-cian-luminoso);
+    border-bottom: 3px solid var(--color-cian-luminoso);
+    text-shadow: 0 0 8px var(--sombra-azul);
 }
 
 .login-container h2 {
     font-size: 1.8rem;
-    color: var(--dorado-principal);
+    color: var(--color-cian-luminoso);
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
     margin-bottom: 10px;
 }
 
-/* Formulario */
 #auth-form {
     width: 100%;
     display: flex;
@@ -109,14 +89,14 @@
 
 .input-group label {
     font-size: 0.9rem;
-    color: var(--dorado-suave);
+    color: var(--color-menta-suave);
 }
 
 .input-group input {
     width: 100%;
     padding: 12px 15px;
-    background-color: var(--verde-profundo);
-    border: 1px solid var(--morado-vibrante);
+    background-color: var(--color-fondo-profundo);
+    border: 1px solid var(--color-azul-acuoso);
     border-radius: 8px;
     color: #FFFFFF;
     font-size: 0.95rem;
@@ -125,18 +105,17 @@
 }
 
 .input-group input:focus {
-    border-color: var(--dorado-principal);
-    box-shadow: 0 0 8px var(--sombra-dorada);
+    border-color: var(--color-cian-luminoso);
+    box-shadow: 0 0 8px var(--sombra-azul);
 }
 
-/* Botón principal */
 .btn-primary {
     margin-top: 10px;
     padding: 12px;
-    background: linear-gradient(90deg, var(--morado-vibrante) 0%, var(--verde-brillante) 100%);
-    border: 2px solid var(--dorado-principal);
+    background: linear-gradient(90deg, var(--color-azul-acuoso) 0%, var(--color-verde-fresco) 100%);
+    border: 2px solid var(--color-cian-luminoso);
     border-radius: 8px;
-    color: var(--dorado-principal);
+    color: #FFFFFF;
     font-weight: bold;
     font-size: 1rem;
     cursor: pointer;
@@ -145,42 +124,7 @@
 
 .btn-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 5px 15px var(--sombra-dorada);
-}
-
-/* Separador (ó) */
-.divider {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    margin: 15px 0 10px 0;
-}
-
-.divider::before, .divider::after {
-    content: "";
-    flex: 1;
-    height: 1px;
-    background: var(--dorado-oscuro);
-}
-
-.divider span {
-    padding: 0 10px;
-    color: var(--dorado-suave);
-    font-size: 0.85rem;
-}
-
-/* Sección Google */
-.google-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    width: 100%;
-}
-
-.google-section p {
-    font-size: 0.9rem;
-    color: #F8F9FA;
+    box-shadow: 0 5px 15px var(--sombra-verde);
 }
 
 footer {
@@ -189,7 +133,6 @@ footer {
     margin-top: 20px;
 }
 
-/* Estilos para el botón de retorno al index */
 .login-main-wrapper {
     display: flex;
     flex-direction: column;
@@ -207,10 +150,10 @@ footer {
 }
 
 .btn-back-home {
-    background: linear-gradient(145deg, var(--morado-medio) 0%, var(--verde-esmeralda) 100%);
-    color: var(--dorado-principal);
+    background: linear-gradient(145deg, var(--color-verde-base) 0%, #0c2419 100%);
+    color: var(--color-menta-suave);
     padding: 8px 16px;
-    border: 1px solid var(--dorado-suave);
+    border: 1px solid var(--color-azul-acuoso);
     border-radius: 8px;
     font-size: 0.9rem;
     font-weight: 500;
@@ -220,8 +163,15 @@ footer {
 }
 
 .btn-back-home:hover {
-    background: linear-gradient(145deg, var(--morado-vibrante) 0%, var(--verde-brillante) 100%);
-    border-color: var(--dorado-principal);
+    background: linear-gradient(145deg, var(--color-azul-acuoso) 0%, var(--color-verde-fresco) 100%);
+    border-color: var(--color-cian-luminoso);
     transform: translateY(-2px);
-    box-shadow: 0 6px 15px var(--sombra-dorada);
+    box-shadow: 0 6px 15px var(--sombra-azul);
+}
+
+#uni{
+    border-radius: 10px;
+    border:none;
+    background-color: transparent;
+    box-shadow: 0 0 10px var(--sombra-verde);
 }

@@ -42,6 +42,9 @@ function cargarDetalleReservorio(reservorio) {
             <p><strong>Descripción:</strong> ${reservorio.descripcion}</p>
             <p style="margin-top: 0.5rem;"><strong>Latitud:</strong> ${reservorio.lat}</p>
             <p><strong>Longitud:</strong> ${reservorio.lng}</p>
+            <p><strong>Capacidad Total:</strong> ${reservorio["capacidad Total"]}</p>
+            <p><strong>Capacidad Actual:</strong> ${reservorio["capacidad Actual"]}</p>
+            <p><strong>Capacidad Disponible:</strong> ${reservorio["capacidad Disponible"]}</p>
         `;
     }
 }

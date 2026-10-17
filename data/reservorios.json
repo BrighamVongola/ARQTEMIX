@@ -4,20 +4,29 @@
     "lat": 12.1287778,
     "lng": -86.1818056,
     "descripcion": "Reservorio pluvial estratégico ubicado en la zona de la Micropresa la Maravilla, diseñado para la contención y regulación de escorrentías.",
-    "imagen": "assets/img/maravilla.jpg"
+    "capacidad Total": "XXXX m³",
+    "capacidad Actual": "XXXX m³",
+    "capacidad Disponible": "XXXX m³",
+    "imagen": "/images/assets/maravilla.jpg"
   },
   {
     "nombre": "Micropresa Urbanización Camino del Río",
     "lat": 12.1215278,
     "lng": -86.1749167,
     "descripcion": "Infraestructura de mitigación y control pluvial situada en la Urbanización Camino del Río.",
-    "imagen": "assets/img/caminodelrio.jpg"
+    "capacidad Total": "XXXX m³",
+    "capacidad Actual": "XXXX m³",
+    "capacidad Disponible": "XXXX m³",
+    "imagen": "/images/assets/caminodelrio.jpg"
   },
   {
     "nombre": "Micropresa N3",
     "lat": 12.1134167,
     "lng": -86.1688611,
     "descripcion": "Punto de retención de aguas pluviales designado como Micropresa N3 para el monitoreo de niveles de agua en época de invierno.",
-    "imagen": "assets/img/micropresan3.jpg"
+    "capacidad Total": "XXXX m³",
+    "capacidad Actual": "XXXX m³",
+    "capacidad Disponible": "XXXX m³",
+    "imagen": "/images/assets/VillaJerusalen.png"
   }
 ]

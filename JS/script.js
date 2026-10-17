@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
             // --- AGREGA ESTAS LÍNEAS AQUÍ ---
             img.style.width = "320px";      // Ajusta el ancho deseado
             img.style.height = "200px";     // Ajusta el alto (hazlo más pequeño para que sea rectangular)
-            img.style.objectFit = "contain"; // "contain" evita que se recorten (muestra la imagen completa)
+            img.style.objectFit = "cover"; // "contain" evita que se recorten (muestra la imagen completa)
             // ---------------------------------
             
             img.onerror = () => {

@@ -1,4 +1,4 @@
-let modoActual = 'login'; // 'login' o 'register'
+/*let modoActual = 'login'; // 'login' o 'register'
 
 // Alternar entre pestaña de Iniciar Sesión y Registrarse
 function mostrarModo(modo) {
@@ -67,7 +67,7 @@ function handleCredentialResponse(response) {
     })
     .then(res => res.json())
     .then(data => { window.location.href = 'dashboard.php'; });
-    */
+    *//*
 }
 
 // Función auxiliar para decodificar el token de Google
@@ -80,3 +80,25 @@ function parseJwt(token) {
 
     return JSON.parse(jsonPayload);
 }
+*/
+document.addEventListener("DOMContentLoaded", function () {
+    const loginForm = document.getElementById("login-form");
+
+    if (loginForm) {
+        loginForm.addEventListener("submit", function (event) {
+            // Evita que el formulario recargue la página o intente enviar una petición HTTP
+            event.preventDefault();
+
+            const user = document.getElementById("username").value.trim();
+            const pass = document.getElementById("password").value.trim();
+
+            // Validación de credenciales
+            if (user === "AdminSINAPRED" && pass === "SINAPREDLATAM2026RALLY") {
+                // Como login.html y datos.html están en la misma carpeta (/HTML/), la ruta relativa es datos.html
+                window.location.href = "datos.html";
+            } else {
+                alert("Usuario o contraseña incorrectos.");
+            }
+        });
+    }
+});

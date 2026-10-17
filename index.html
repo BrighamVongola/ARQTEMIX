@@ -1,18 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./CSS/style.css">
     <link rel="stylesheet" href="./CSS/carrusel.css">
-    <title>ARQTEMIX</title>
+    <script>
+        // Script opcional de validación o redirección automática si es necesario
+        window.addEventListener("DOMContentLoaded", () => {
+            console.log("ARQTEMIX Index cargado correctamente.");
+        });
+    </script>
+    <title>ARQTEMIX - Monitoreo e Infraestructura Verde</title>
 </head>
 <body>
     <header>
         <div class="cabezal">
             <img src="./images/LOGO_UNI-removebg-preview.png" alt="Logo de UNI" class="logo">
             <h1>ARQTEMIX</h1>
-            <img src="./images/Logo ARQTEMIX.jpeg" alt="Logo Arqtemix" class="logo">
+            <a href="/HTML/login.html" >
+                <img src="/images/Logo ARQTEMIX.jpeg" alt="Arqtemix Logo" class="logo">
+            </a>
         </div>
         <div class="carrusel-contenedor">
         <!-- Div principal requerido -->
@@ -24,87 +32,75 @@
     <main>
         <div class="contenedor" id="propuesta">
             <section id="arqtemix">
-                <h2>¿Quienes somos?</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                     Possimus voluptatibus, expedita quisquam at error facilis 
-                     deserunt laudantium repellat perferendis praesentium. 
-                     Expedita quia optio non mollitia illo quo labore modi libero!</p>
+                <h2>¿Quiénes somos?</h2>
+                <p>
+                    Somos el equipo <strong>ARQTEMIX</strong> de la Universidad Nacional de Ingeniería (UNI RUSB),
+                    dedicado a desarrollar soluciones integrales e innovadoras que combinan tecnología accesible, 
+                    soluciones basadas en la naturaleza e infraestructura verde para la gestión sostenible de recursos hídricos 
+                    y la mejora del entorno urbano y comunitario.
+                </p>
             </section>
             <section id="propuesta">
                 <h2>Propuesta de valor</h2>
                 <p>
-                    Los reservorios pluviales son estructuras o espacios, naturales o artificiales, 
-                    que almacenan agua de lluvia para regularla, evitar inundaciones y/o reutilizarla. 
-                    Aquellos en zonas vulnerables sufren anegamientos recurrentes, 
-                    acumulación de sedimentos y falta de visibilidad o monitoreo en tiempo real 
-                    para la prevención de inundaciones.
+                    En la comunidad de Sabana Grande, las cuatro micropresas destinadas a regular el agua de lluvia enfrentan falta de monitoreo en tiempo real,
+                    acumulación de sedimentos y riesgos hídricos ante precipitaciones intensas.
                 </p>
                 <p>
-                    El desafío consiste en identificar una comunidad urbana o periurbana vulnerable 
-                    expuesta a riesgos hídricos y diseñar una propuesta integral que combine herramientas 
-                    de monitoreo de agua con intervenciones de infraestructura verde, fundamentando de qué 
-                    manera la solución optimiza la respuesta de drenaje, mejora la calidad ambiental 
-                    y se articula con la gestión comunitaria e institucional.
+                    Nuestra propuesta integral combina tecnología de supervisión de niveles de agua con intervenciones de infraestructura verde,
+                    optimizando el drenaje pluvial, impulsando la reutilización del agua y transformando los entornos en espacios públicos seguros y sostenibles.
                 </p>
             </section>
         </div>
         <div class="contenedor" id="desarrollo">
-            <img src="./images/Relleno/relleno 1.jpg" alt=""class="imagen">
+            <img src="./images/Relleno/relleno 1.jpg" alt="Infraestructura Verde" class="imagen">
             <section>
                 <h2>Desarrollo</h2>
                 <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Possimus voluptatibus, expedita quisquam at error facilis deserunt
-                    laudantium repellat perferendis praesentium. Expedita quia optio non 
-                    mollitia illo quo labore modi libero!
+                    El proyecto incorpora tecnología de monitoreo mediante sensores de nivel y microcontroladores integrados con un sistema de alertas. 
+                    Complementariamente, se interviene el entorno con la siembra de árboles, vegetación nativa, senderos peatonales, zonas de estancia 
+                    y superficies permeables que favorecen la infiltración de agua, reducen la escorrentía y promueven la convivencia comunitaria y la educación ambiental.
                 </p>
             </section>
-            <img src="./images/Relleno/relleno 2.jpg" alt=""class="imagen">
+            <img src="./images/Relleno/relleno 2.jpg" alt="Espacios Verdes" class="imagen">
         </div>
         <div class="contenedor" id="solucion">
             <section>
                 <h2>Solución</h2>
                 <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Possimus voluptatibus, expedita quisquam at error facilis deserunt
-                    laudantium repellat perferendis praesentium. Expedita quia optio non 
-                    mollitia illo quo labore modi libero!
+                    Ofrecemos un sistema modular y adaptable para reservorios pluviales que supervisa en tiempo real el almacenamiento hídrico 
+                    para mitigar el riesgo de anegamientos. Mediante componentes de filtración, bombeo y distribución, captamos y aprovechamos el agua de lluvia 
+                    recolectada, reduciendo el consumo de agua potable y revalorizando la infraestructura urbana.
                 </p>
             </section>
-            <img src="./images/Relleno/paisaje 1.jpeg" alt=""class="imagen">
+            <img src="./images/Relleno/paisaje 1.jpeg" alt="Paisaje y Paisajismo Urbano" class="imagen">
         </div>
         <div class="contenedor" id="servicios">
             <section>
-                <h2>SErvicios</h2>
+                <h2>Monitoreo y Alerta Temprana</h2>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Est provident amet ut! Earum aspernatur, dolor, 
-                    illo expedita illum quisquam odit ipsum deleniti beatae ipsa 
-                    aut vel deserunt tenetur nulla neque!
+                    Supervisión en tiempo real de los niveles de agua en reservorios pluviales mediante sensores y microcontroladores, 
+                    emitiendo alertas preventivas para la mitigación oportuna de riesgos hidráulicos y anegamientos en la comunidad.
                 </p>
             </section>
             <section>
-                <h2>SErvicios</h2>
+                <h2>Reutilización para Riego Agrícola</h2>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Est provident amet ut! Earum aspernatur, dolor, 
-                    illo expedita illum quisquam odit ipsum deleniti beatae ipsa 
-                    aut vel deserunt tenetur nulla neque!
+                    Sistema de filtración y bombeo para el aprovechamiento responsable del agua pluvial almacenada, 
+                    destinándola al riego de cultivos locales y áreas verdes para disminuir el uso de agua potable.
                 </p>
             </section>
             <section>
-                <h2>SErvicios</h2>
+                <h2>Abastecimiento para Control de Polvo</h2>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Est provident amet ut! Earum aspernatur, dolor, 
-                    illo expedita illum quisquam odit ipsum deleniti beatae ipsa 
-                    aut vel deserunt tenetur nulla neque!
+                    Suministro de agua pluvial tratada mediante la carga de pipas dedicadas a la mitigación y control del polvo 
+                    en obras de construcción e infraestructura vial.
                 </p>
             </section>
         </div>
     </main>
     <footer>
-        <p>&copy; 2023 ARQTEMIX. All rights reserved.</p>
+        <p>&copy; 2026 ARQTEMIX. Todos los derechos reservados.</p>
     </footer>
     <script src="./JS/script.js"></script>
 </body>

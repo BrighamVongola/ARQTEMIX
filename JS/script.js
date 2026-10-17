@@ -3,13 +3,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Lista de tus imágenes dentro de la carpeta "imagenes/"
     const imagenes = [
-        "i1.jpg",
-        "i2.jpg",
-        "i3.jpg",
-        "i4.jpg",
-        "i5.jpg",
-        "i6.jpg",
-        "i7.jpg"
+        "3.jpg.jpeg",
+        "4.jpg.jpeg",
+        "5.jpg.jpeg",
+        "6.jpg.jpeg",
+        "7.jpg.jpeg",
+        "8.jpg.jpeg",
+        "9.jpg.jpeg"
     ];
 
     function inicializarCarrusel() {
@@ -26,11 +26,17 @@ document.addEventListener("DOMContentLoaded", () => {
             item.className = "carrusel-item";
             
             const img = document.createElement("img");
-            img.src = `images/randoms/${nombreArchivo}`;
+            img.src = `images/Personales/${nombreArchivo}`;
             img.alt = `Imagen ${index + 1}`;
+
+            // --- AGREGA ESTAS LÍNEAS AQUÍ ---
+            img.style.width = "320px";      // Ajusta el ancho deseado
+            img.style.height = "200px";     // Ajusta el alto (hazlo más pequeño para que sea rectangular)
+            img.style.objectFit = "contain"; // "contain" evita que se recorten (muestra la imagen completa)
+            // ---------------------------------
             
             img.onerror = () => {
-                img.src = `https://via.placeholder.com/280x180?text=Foto+${index + 1}`;
+                img.src = `https://via.placeholder.com/320x200?text=Foto+${index + 1}`;
             };
 
             item.appendChild(img);
@@ -41,7 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
         contenedorCarrusel.appendChild(trackPrincipal);
 
         // 3. Forzar un reflow para medir el ancho real del bloque de imágenes con su gap
-        const anchoBloque = trackPrincipal.offsetWidth + 25; // Ancho + el gap final
+        const anchoBloque = trackPrincipal.offsetWidth + 35; // Ancho + el gap final
 
         // 4. Duplicar el bloque las veces necesarias para cubrir la animación de manera infinita
         // Creamos 2 copias adicionales para asegurar que nunca se quede sin elementos al desplazarse
